@@ -1,6 +1,8 @@
 import './sass/main.scss';
 import API from './fetchCountries.js';
 import countriesCardsMurkUp from './templates/countries-card.hbs';
+import ' fetchCountries ';
+console.log(API);
 
 const cardContainer = document.querySelector('.js-card-container');
 
