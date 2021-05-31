@@ -1,17 +1,16 @@
-<div class="card">
-  <div class="card-img-top">
-    <img src="{{sprites.front_default}}" alt="{{name}}">
-  </div>
-  <div class="card-body">
-    <h2 class="card-title">Имя: {{name}}</h2>
-    <p class="card-text">Вес: {{weight}}</p>
-    <p class="card-text">Рост: {{height}}</p>
+<div class='card'>
+  <h1 class='title'>{{0.name}}</h1>
+  <div class='card-body'>
 
-    <p class="card-text"><b>Умения</b></p>
-    <ul class="list-group"></ul>
-    {{#each abilities}}
-      <li class="list-group-item">{{ability.name}}</li>
-    {{/each}}
-    </ul>
+    <div class='info-country'>
+      <div class='capital'><span class='text-name'>Capital: </span>{{0.capital}} </div>
+      <div class='population'><span class='text-name'>Population: </span>{{0.population}}</div>
+
+      <div class='languages'><span class='text-name'>Languages: </span><ul>{{#each 0.languages}}<li
+            >{{name}}</li>{{/each}}</ul></div>
+    </div>
+
+    <div class='flag'><img src='{{0.flag}}' alt='flag' class='flag-img' /></div>
+
   </div>
 </div>
