@@ -9,7 +9,6 @@ import '@pnotify/core/dist/PNotify.css';
 import { error } from '@pnotify/core';
 import { defaults } from '@pnotify/core';
 
-defaults.width = '500px';
 defaults.styling = 'material';
 
 const cardContainer = document.querySelector('.js-card-container');
